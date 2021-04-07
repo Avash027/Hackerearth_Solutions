@@ -58,7 +58,7 @@ string path = "URDL";
 
 vi add(vi num1 , vi num2)
 {
-	vi num3(100, 0);
+	vi num3(1000, 0);
 	int carry = 0;
 	int cnt = 0;
 	for (int i = sz(num1) - 1; i >= 0 ; i--)
@@ -72,10 +72,10 @@ vi add(vi num1 , vi num2)
 
 void solve()
 {
-	vi num1(100, 0);
-	vi num2(100, 0);
+	vi num1(1000, 0);
+	vi num2(1000, 0);
 	num2.back() = 1;
-	vi num3(100, 0);
+	vi num3(1000, 0);
 
 	while (1)
 	{
@@ -87,7 +87,7 @@ void solve()
 		num1 = num2;
 		num2 = num3;
 	}
-	debug(num3);
+	for (int&e : num3) cout << e << "";
 }
 
 int32_t main()
